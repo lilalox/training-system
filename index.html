@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" href="resources/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c7fa20b4b7.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <title>Training System</title>
+</head>
+<body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+        $.get("resources/nav.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+        });
+    </script> 
+    <!--end of Navigation bar-->
+
+    <div class="content">
+        <header>
+            <div class="grid">
+                <img id="logo-official" src="resources/images/chofficial.png" alt="IVAO Switzerland official logo">
+                <h2 id="subtitle">IVAO Switzerland</h2>
+                <h1 id="title">Training System</h1>
+            </div>
+        </header>
+        <main>
+
+        </main>
+        <footer>
+            <p class="copyright">
+                &copy IVAO Switzerland 2021
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

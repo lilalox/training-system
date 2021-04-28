@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'Helvetica Neue LT';
+    src: url(./fonts/HelveticaNeueLTStd-Lt.otf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT';
+    src: url(./fonts/HelveticaNeueLTStd-Md.otf);
+    font-weight: 600;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    height: 100%;
+}
+
+body {
+    /* overflow: hidden; */
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: "nav content";
+    grid-template-columns: minmax(200px, 250px) auto;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #eee;
+    box-shadow: 2px 0px 4px rgba(0,0,0,0.2);
+    padding: 1rem;
+}
+
+.content {
+    grid-area: content;
+    overflow-y: scroll;
+}
+
+header {
+    z-index: 1;
+}
+
+header .grid {
+    display: grid;
+    grid-template-areas:    "logo subtitle"
+                            "logo title";
+    align-items: center;
+    margin: 0 auto;
+    width: fit-content;
+    padding-right: 20px;
+}
+
+header #logo-official {
+    grid-area: logo;
+    width: 100px;
+    height: auto;
+}
+
+header #title {
+    grid-area: title;
+    align-self: start;
+}
+
+header #subtitle {
+    grid-area: subtitle;
+    align-self: end;
+}
+
+main {
+    min-height: 100vh;
+    /* box-shadow: 2px 2px 5px rgba(0,0,0,0.2) inset; */
+}
+
+footer {
+    background-color: #3a3a3a;
+    padding: 1rem;
+}
+
+h1 {
+    font-family: 'Helvetica Neue LT', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Helvetica Neue LT', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+h3.nav {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 2rem 0 1rem;
+}
+
+a, a:visited {
+    color: #d61f28;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #aaa;
+}
+
+nav hr {
+    border: none;
+    border-top: 2px solid;
+}
+
+nav p {
+    margin-bottom: 0.8rem;
+}
+
+nav .logout {
+    display: block;
+    margin: 2rem 0;
+}
+
+nav li {
+    padding: 0.4rem 0 0.4rem 1rem;
+    margin: 0 -1rem;
+}
+
+.menu {
+    padding:initial;
+    margin: initial; 
+}
+
+.menu a {
+    color: black;
+    transition: 0.2s;
+}
+
+.menu a li:hover {
+    color: #d61f28;
+    transition: 0.2s;
+    background-color: rgba(255,255,255,0.4);
+}
+
+.fas {
+    max-width: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.logout .fas {
+    color: black;
+}
+
+p.roles {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+
+p.copyright {
+    color: white;
+    text-align: center;
+}
