@@ -10,35 +10,28 @@
     font-weight: 600;
 }
 
+* {
+    box-sizing: border-box;
+}
 html {
     font-size: 16px;
     font-family: 'Open Sans', Arial, sans-serif;
-    height: 100%;
+    
 }
 
 body {
-    /* overflow: hidden; */
-    height: 100vh;
     width: 100vw;
     display: grid;
+    overflow-x: hidden;
     grid-template-areas: "nav content";
-    grid-template-columns: minmax(200px, 250px) auto;
-}
-
-nav {
-    grid-area: nav;
-    background-color: #eee;
-    box-shadow: 2px 0px 4px rgba(0,0,0,0.2);
-    padding: 1rem;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: min-content;
 }
 
 .content {
     grid-area: content;
-    overflow-y: scroll;
-}
-
-header {
-    z-index: 1;
+    overflow-x: hidden;
+    min-height: 100%;
 }
 
 header .grid {
@@ -48,13 +41,13 @@ header .grid {
     align-items: center;
     margin: 0 auto;
     width: fit-content;
-    padding-right: 20px;
 }
 
 header #logo-official {
     grid-area: logo;
     width: 100px;
     height: auto;
+    margin-left: -16px;
 }
 
 header #title {
@@ -90,12 +83,6 @@ h2 {
     font-size: 1.2rem;
 }
 
-h3.nav {
-    text-transform: uppercase;
-    font-weight: 600;
-    margin: 2rem 0 1rem;
-}
-
 a, a:visited {
     color: #d61f28;
     text-decoration: none;
@@ -103,58 +90,6 @@ a, a:visited {
 
 a:hover, a:active {
     color: #aaa;
-}
-
-nav hr {
-    border: none;
-    border-top: 2px solid;
-}
-
-nav p {
-    margin-bottom: 0.8rem;
-}
-
-nav .logout {
-    display: block;
-    margin: 2rem 0;
-}
-
-nav li {
-    padding: 0.4rem 0 0.4rem 1rem;
-    margin: 0 -1rem;
-}
-
-.menu {
-    padding:initial;
-    margin: initial; 
-}
-
-.menu a {
-    color: black;
-    transition: 0.2s;
-}
-
-.menu a li:hover {
-    color: #d61f28;
-    transition: 0.2s;
-    background-color: rgba(255,255,255,0.4);
-}
-
-.fas {
-    max-width: 0.8rem;
-    padding-right: 0.8rem;
-}
-
-.logout .fas {
-    color: black;
-}
-
-p.roles {
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    line-height: 1.4;
 }
 
 p.copyright {
