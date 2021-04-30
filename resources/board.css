@@ -1,0 +1,91 @@
+.board {
+    margin: 1rem 1rem 1rem 0.5rem;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.board .doublecol {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: stretch;
+    
+}
+
+.board .col {
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid #eee;
+    padding: 0.5rem;
+    margin: 0 0.25rem 0.5rem;
+    display: flex;
+    flex-flow: column;
+    min-width: 220px;
+    flex-grow: 1;
+}
+
+.board .coltitle {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid #3a3a3a;
+}
+
+.board .card {
+    background-color: rgba(238,238,238,0.3);
+    border-radius: 5px;
+    border: 2px solid #eee;
+    min-height: 60px;
+    margin-top: 0.5rem;
+    display: flex;
+    min-width: fit-content;
+}
+
+.board .card .text {
+    margin: 0.2rem 0.5rem;
+}
+
+.board .card .cardtitle {
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+.board .card .carddetails {
+    margin-bottom: 0.5rem;
+}
+
+.board .card .date {
+    font-size: 0.8rem;
+}
+
+.board .card .date::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    /* font-size: 80%; */
+    content: "\f017";
+}
+
+.board .status {
+    border-radius: 5px 0 0 5px;
+    width: 8px;
+    height: calc(100% + 3px);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: -1px;
+}
+
+.board .status.toassign {
+    background-color: yellow;
+}
+
+.board .status.standby {
+    background-color: darkslategrey;
+}
+
+.board .status.contact {
+    background-color: orange;
+}
+
+.board .status.dateset {
+    background-color: mediumseagreen;
+}

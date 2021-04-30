@@ -1,0 +1,69 @@
+header .grid {
+    background-color: white;
+    padding: 1rem 0;
+    display: grid;
+    grid-template-areas:    "logo subtitle"
+                            "logo title";
+    align-items: center;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+header #logo-official {
+    grid-area: logo;
+    width: 100px;
+    height: auto;
+    margin-left: -16px;
+}
+
+header #title {
+    grid-area: title;
+    align-self: start;
+}
+
+header #subtitle {
+    grid-area: subtitle;
+    align-self: end;
+}
+
+.content .navbar {
+    letter-spacing: -1px;
+    padding: 0.5rem 2rem;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    background-color: #3a3a3a;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .navbar h3 {
+    display: inline-block;
+}
+
+.content .navbar h3.directory {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    vertical-align: 5%;
+}
+
+.content .navbar h3.current {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+}
+
+.content .navbar .fas {
+    font-size: 0.8rem;
+    vertical-align: 10%;
+}
+
+.content .navbar a {
+    color: white;
+    margin-left: 10px;
+}
+
+.content .navbar a:hover {
+    text-decoration: underline;
+}

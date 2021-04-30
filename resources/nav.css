@@ -1,21 +1,24 @@
 #nav-placeholder {
     height: 100%;
+    /* z-index: 10; */
 }
 
 nav {
     grid-area: nav;
-    background-color: #eee;
-    box-shadow: 2px 0px 4px rgba(0,0,0,0.2);
+    background-color: white;
+    /* box-shadow: 2px 0px 4px rgba(0,0,0,0.2); */
     padding: 1rem;
     width: 48px;
     height: 100%;
     transition: 0.5s;
+    border-right: 2px solid #eee;
 }
 
 nav .menuicon {
+    text-align: right;
     opacity: 1;
-    transition: 0.2s;
-    transition-delay: 0.4s;
+    transition-duration: 0.2s;
+    transition-delay: 0.2s;
 }
 
 nav .full {
@@ -45,7 +48,7 @@ nav:hover .full {
     overflow: unset;
 }
 
-h3.nav {
+nav h3 {
     text-transform: uppercase;
     font-weight: 600;
     margin: 2rem 0 1rem;
@@ -70,10 +73,6 @@ nav li {
     margin: 0 -1rem;
 }
 
-nav .menuicon {
-    text-align: right;
-}
-
 .menu {
     padding:initial;
     margin: initial; 
@@ -90,7 +89,7 @@ nav .menuicon {
     background-color: rgba(255,255,255,0.4);
 }
 
-.fas {
+nav .fas {
     width: 1.6rem;
     padding-right: 1rem;
 }
